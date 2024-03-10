@@ -53,6 +53,8 @@ export const ucProjectDisplayStyles = () => {
     borderRadius: "10px",
     padding: "5px",
     border: "2px solid #000000",
+    transition: "all 0.6s ease",
+    boxShadow: "0 8px 32px 0 #141414"
   };
 
   return { divStyles, projectGrid };

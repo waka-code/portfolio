@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { ucHomeStyles, ucProjectDisplayStyles } from "./HomeStyles";
-import { ucScroolHover } from "../hook";
+import { ucScroolHover } from "../../designs/hook";
 import { ProjectDisplayProps, ucHome } from "./hook";
 
 export const Work = () => {
@@ -13,7 +13,7 @@ export const Work = () => {
       <div style={divStyles}>
         <h1 style={h1Styles}>
           <span>¡Hola!, Soy Louis</span>
-          <span>Ingeniero de sistemas</span>
+          <span>Ingeniero en sistemas</span>
         </h1>
         <h2 style={h2Styles}>{`<Bienvenido a WakaCode/>`}</h2>
         <p style={pStyles}>
@@ -53,6 +53,7 @@ const ProjectDisplay: React.FC<ProjectDisplayProps> = ({ projects }) => {
           key={index}
           onClick={() => navigate(project.url)}
           style={projectGrid}
+          className="Cards"
         >
           <img src={project.img} alt="proyecto" />
         </div>

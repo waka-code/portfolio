@@ -29,5 +29,13 @@ li:hover {
   border-radius: 18px;
   background: #000000e8;
   color: #ffffff;
+}
+.ulFooterStyle:hover {
+  border-radius: 18px;
+  color: #000000e8;
+}
 
+.Cards:hover {
+  border-radius: 50px;
+  transform: scale(1.05);
 }

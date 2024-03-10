@@ -1,13 +1,31 @@
+import { ucMediaQuery } from "../../designs/mediaQuery/hook";
 import { ucHeaderStyles } from "./HeaderStyles";
 import { ucHeader } from "./hook";
 
 export const Header = () => {
   const { navStyle, liStyle, ulStyle, ulScroolYStyle } = ucHeaderStyles();
-  const { hovverNav, navigation, menuNav } = ucHeader({ulScroolYStyle, ulStyle});
+  const { hoverNav, navigation, menuNav } = ucHeader({
+    ulScroolYStyle,
+    ulStyle,
+  });
+  const { isMobileDevice, isTabletDevice, isLaptop, isDesktop, isBigScreen } =
+    ucMediaQuery();
+  console.log(
+    "isMobileDevice :",
+    isMobileDevice,
+    "isTabletDevice :",
+    isTabletDevice,
+    "isLaptop :",
+    isLaptop,
+    "isDesktop :",
+    isDesktop,
+    "isBigScreen :",
+    isBigScreen
+  );
 
   return (
     <nav style={navStyle}>
-      <ul style={hovverNav}>
+      <ul style={hoverNav}>
         {menuNav.map((item, index) => {
           let ruta = `/${item}`;
           if (item === "Home") {
