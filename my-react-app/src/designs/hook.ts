@@ -6,7 +6,7 @@ type ucHeaderProps = {
   fadeDown: string | undefined;
 };
 
-export const ucScroolHover = ({
+export const ucScrollHover = ({
   ulScroolYStyle,
   ulStyle,
   fadeUp,

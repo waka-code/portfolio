@@ -15,7 +15,7 @@ export const ucHomeStyles = () => {
   };
 
   const h1Styles: React.CSSProperties = {
-    color: "black",
+    color: "white",
     fontSize: "130px",
     textAlign: "center",
     lineHeight: "1.1",
@@ -24,13 +24,13 @@ export const ucHomeStyles = () => {
   };
 
   const h2Styles: React.CSSProperties = {
-    color: "black",
+    color: "white",
     fontSize: "50px",
     textAlign: "center",
   };
 
   const pStyles: React.CSSProperties = {
-    color: "black",
+    color: "white",
     fontSize: "20px",
     textAlign: "center",
   };
@@ -46,15 +46,17 @@ export const ucProjectDisplayStyles = () => {
     gap: "4rem",
     cursor: "pointer",
     padding: "90px 0 5px 0",
-
   };
 
   const projectGrid: React.CSSProperties = {
     borderRadius: "10px",
-    padding: "5px",
+    padding: "5px 0",
     border: "2px solid #000000",
     transition: "all 0.6s ease",
-    boxShadow: "0 8px 32px 0 #141414"
+    boxShadow: "0 8px 32px 0 #141414",
+    position: "relative",
+    display: "flex",
+    width: "100%",
   };
 
   return { divStyles, projectGrid };

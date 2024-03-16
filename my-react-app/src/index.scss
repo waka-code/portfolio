@@ -13,6 +13,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+@mixin cards {
+  display: none;
+  position: absolute;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  transition: opacity 0.3s;
+  border-radius: 10px;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -38,4 +49,37 @@ li:hover {
 .Cards:hover {
   border-radius: 50px;
   transform: scale(1.05);
+}
+
+.Description {
+  @include cards();
+  bottom: 0px;
+  left: 10px;
+  text-overflow: ellipsis;
+  white-space: wrap;
+  height: 5ch;
+  width: auto;
+  max-width: 31.5ch;
+  overflow: hidden;
+}
+.Button {
+  @include cards();
+  cursor: pointer;
+  bottom: 90px;
+  left: 10px;
+  border: none;
+}
+
+
+.Cards img {
+  transition: opacity 0.3s;
+}
+
+.Cards:hover img {
+  opacity: 0.10; 
+}
+
+.Cards:hover .Button,
+.Cards:hover .Description {
+  display: block;
 }

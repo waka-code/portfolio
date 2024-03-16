@@ -7,6 +7,7 @@ export const ucHeaderStyles = () => {
     alignItems: "center",
     padding: "10px",
     transition: "0.5s",
+    maxWidth: "100%",
   };
 
   const ulStyle: React.CSSProperties = {
@@ -17,7 +18,7 @@ export const ucHeaderStyles = () => {
 
   const ulScroolYStyle: React.CSSProperties = {
     position: "fixed",
-    width: "38%",
+    maxWidth: "38%",
     top: 0,
     zIndex: 1000,
     transition: "0.5s",
@@ -34,6 +35,7 @@ export const ucHeaderStyles = () => {
     cursor: "pointer",
     padding: "5px 15px",
     fontSize: "20px",
+    color: "white",
   };
 
   return {

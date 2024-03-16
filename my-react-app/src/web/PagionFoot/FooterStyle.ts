@@ -14,20 +14,18 @@ export const ucFooterStyles = () => {
     display: "flex",
     justifyContent: "space-between",
     gap: "20px",
-    width: 250
   };
 
-  const divIconsSocia: React.CSSProperties = {
-   display: "flex",
-   justifyContent: "center",
-   alignItems: "center",
-   height: "50%",
-   cursor: "pointer",
-  };
+  // const divIconsSocia: React.CSSProperties = {
+  //  display: "flex",
+  //  justifyContent: "center",
+  //  alignItems: "center",
+  //  height: "50%",
+  //  cursor: "pointer",
+  // };
   return {
     divFooter,
     divSocial,
     ulFooterStyle,
-    divIconsSocia
   };
 };

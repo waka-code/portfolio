@@ -1,6 +1,8 @@
+import { Crisp } from "crisp-sdk-web";
 import { ucMediaQuery } from "../../designs/mediaQuery/hook";
 import { ucHeaderStyles } from "./HeaderStyles";
 import { ucHeader } from "./hook";
+import { useState } from "react";
 
 export const Header = () => {
   const { navStyle, liStyle, ulStyle, ulScroolYStyle } = ucHeaderStyles();
@@ -23,6 +25,7 @@ export const Header = () => {
     isBigScreen
   );
 
+ 
   return (
     <nav style={navStyle}>
       <ul style={hoverNav}>
@@ -31,6 +34,7 @@ export const Header = () => {
           if (item === "Home") {
             ruta = "/";
           }
+
           return (
             <li key={index} onClick={() => navigation(ruta)} style={liStyle}>
               {item}

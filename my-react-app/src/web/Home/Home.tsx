@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { ucHomeStyles, ucProjectDisplayStyles } from "./HomeStyles";
-import { ucScroolHover } from "../../designs/hook";
+import { ucScrollHover } from "../../designs/hook";
 import { ProjectDisplayProps, ucHome } from "./hook";
 
 export const Work = () => {
@@ -39,7 +39,7 @@ const ProjectDisplay: React.FC<ProjectDisplayProps> = ({ projects }) => {
   const navigate = useNavigate();
 
   const { divStyles, projectGrid } = ucProjectDisplayStyles();
-  const { hoverCards } = ucScroolHover({
+  const { hoverCards } = ucScrollHover({
     ulScroolYStyle: undefined,
     ulStyle: undefined,
     fadeUp: "fade-up",
@@ -56,6 +56,10 @@ const ProjectDisplay: React.FC<ProjectDisplayProps> = ({ projects }) => {
           className="Cards"
         >
           <img src={project.img} alt="proyecto" />
+          <button className="Button" onClickCapture={() => alert("hola")}>
+            Ver más
+          </button>
+          <p className="Description">Description</p>
         </div>
       ))}
     </div>

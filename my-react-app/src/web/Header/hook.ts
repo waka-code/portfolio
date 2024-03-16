@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { ucScroolHover } from "../../designs/hook";
+import { ucScrollHover } from "../../designs/hook";
 
 export const ucHeader = ({
   ulScroolYStyle,
@@ -8,17 +8,19 @@ export const ucHeader = ({
   ulScroolYStyle: React.CSSProperties;
   ulStyle: React.CSSProperties;
 }) => {
-  const menuNav: string[] = ["Home", "About", "Portfolio", "Skill", "Contact"];
+  const menuNav: string[] = ["Home", "About", "Portfolio", "Skill"];
   const navigation = useNavigate();
-  const { hoverNav } = ucScroolHover({
+
+  const { hoverNav } = ucScrollHover({
     ulScroolYStyle: ulScroolYStyle,
     ulStyle: ulStyle,
     fadeUp: undefined,
     fadeDown: undefined,
   });
+
   return {
     hoverNav,
     navigation,
-    menuNav,
+    menuNav
   };
 };
