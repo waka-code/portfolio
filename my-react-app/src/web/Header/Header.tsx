@@ -1,8 +1,6 @@
-import { Crisp } from "crisp-sdk-web";
 import { ucMediaQuery } from "../../designs/mediaQuery/hook";
 import { ucHeaderStyles } from "./HeaderStyles";
 import { ucHeader } from "./hook";
-import { useState } from "react";
 
 export const Header = () => {
   const { navStyle, liStyle, ulStyle, ulScroolYStyle } = ucHeaderStyles();
